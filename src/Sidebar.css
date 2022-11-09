@@ -1,0 +1,88 @@
+.sidebar{
+    position: fixed;
+    top:82px;
+    z-index: 100;
+    margin-right: 10px;
+    width: 225px;
+    height: 100vh;
+    overflow-y: scroll;
+    bottom: 0;
+    -webkit-overflow-scrolling: touch;
+    background:white !important; 
+
+    
+}
+.sidebar::-webkit-scrollbar {
+    width: 10px !important;
+    background:white !important; 
+  }
+  
+
+
+  .sidebar ::-webkit-scrollbar{
+    width: 10px;
+}
+.sidebar::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 5px;
+    
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 5px;
+    padding-left:5px !important;
+}
+.sidebar:hover.sidebar::-webkit-scrollbar-thumb{
+    background: rgb(165, 164, 164);
+    padding-left:5px !important;
+}
+.sidebar::-webkit-scrollbar-thumb:hover{
+    background: rgb(165, 164, 164);
+    padding-left:5px !important;
+}
+
+.SSsidebar{
+    display: none;
+
+}
+@media screen and (max-width: 1313px) {
+    .sidebar{
+        display: none;
+    }
+    .SSsidebar{
+        display:flex;
+        
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 5px 0px;
+        gap: 10px;
+        margin:0px;
+        position: fixed;
+        top:77px;
+        z-index: 100;
+     min-height: 95vh;
+        /* background-color: tomato; */
+    
+    }
+    .ssidebarRow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 5px 3px;
+        margin:0px;
+    
+    }
+    
+    .ssidebarRow.selected{
+        background-color: lightgrey;
+    }
+}
+.SSsidebar>div{
+    text-align: center;
+    font-size: small;
+}
+.SSsidebar>div>p{
+    text-align: center;
+}

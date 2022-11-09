@@ -1,0 +1,33 @@
+.watch_page{
+    display: flex; 
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-width:425px;
+    margin-left: 50px;
+     /* height: 200vh; */
+     /* flex-wrap: wrap; */
+     background-color: rgb(245, 243, 243);
+     
+}
+.watch_video_detail{
+    flex:.7;
+
+}
+.related_video_detail{
+    flex: .3;
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .watch_page{
+        display: flex; 
+        padding-left: 30px;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+         
+         
+    }
+    
+}
